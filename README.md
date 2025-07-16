@@ -49,7 +49,7 @@ Para abordar este problema, el análisis se guiará por las siguientes hipótesi
 ## 5. Estructura del Repositorio
 
 El proyecto está organizado de manera lógica para facilitar la navegación, el mantenimiento y la reproducibilidad.
-
+```
 /
 ├── data/
 │   ├── raw/          # Archivos de datos originales sin procesar
@@ -59,7 +59,7 @@ El proyecto está organizado de manera lógica para facilitar la navegación, el
 ├── app/              # Código de la aplicación Streamlit
 ├── .gitignore
 ├── requirements.txt  # Lista de dependencias para la reproducibilidad
-└── README.md         # Este mismo archivo, el documento central del proyecto
+└── README.md         # Este mismo archivo, el documento central del proyecto```
 
 
 ---
