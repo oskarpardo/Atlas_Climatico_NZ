@@ -1,104 +1,104 @@
-# 📈 Atlas de Adaptación Agro-Climática de Nueva Zelanda para 2050
+# 📈 New Zealand Agro-Climatic Adaptation Atlas for 2050
 
 ![Python](https://img.shields.io/badge/python-3.x-blue.svg) ![Pandas](https://img.shields.io/badge/pandas-2.x-blue.svg) ![NumPy](https://img.shields.io/badge/numpy-1.2x-blue.svg) ![Streamlit](https://img.shields.io/badge/streamlit-1.x-orange.svg) ![Plotly](https://img.shields.io/badge/plotly-5.x-orange.svg) ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-**Un proyecto de análisis de datos de ciclo completo para evaluar el riesgo climático y modelar estrategias de adaptación en las industrias primarias clave de Nueva Zelanda.**
+**A full-cycle data analysis project to assess climate risk and model adaptation strategies for New Zealand's key primary industries.**
 
 ---
 
-### ➡️ [Ver Dashboard Interactivo en Vivo](link vacio por ahora)
+### ➡️ [View Live Interactive Dashboard](link-to-be-added)
 
-*Gift cuando esté listo*
-
----
-
-## 1. Visión del Proyecto y Propuesta de Valor
-
-Este proyecto simula un encargo de consultoría estratégica de alto nivel, diseñado para ir más allá del análisis de datos convencional. El objetivo es construir un prototipo de **Herramienta de Evaluación de Riesgo Climático**. La propuesta de valor es demostrar la capacidad de transformar datos dispares y complejos en una herramienta interactiva que facilita la toma de decisiones estratégicas a largo plazo. El resultado final no solo presenta hallazgos, sino que ofrece una solución que un stakeholder, como un viticultor o un planificador gubernamental, puede utilizar para explorar escenarios y planificar la adaptación.
-
-## 2. El Problema de Negocio
-
-Las industrias primarias son la columna vertebral de la economía de exportación de Nueva Zelanda, definiendo la identidad productiva del país. Sin embargo, enfrentan una amenaza tangible y creciente por el cambio climático. Este proyecto aborda los siguientes riesgos específicos y medibles:
-
-* **Viticultura:** El calentamiento global está causando una "compresión de la cosecha", acelerando la maduración de la uva, lo que afecta su calidad y crea cuellos de botella logísticos durante la vendimia.
-* **Kiwis:** El aumento de las temperaturas invernales amenaza con la "pérdida de frío invernal". Las variedades de kiwi como Hayward necesitan un número mínimo de horas a bajas temperaturas para una brotación y cosecha abundantes, poniendo en riesgo la viabilidad del cultivo en regiones clave como Bay of Plenty.
-* **Lechería:** El incremento de "días de estrés por calor" (temperaturas > 25°C) puede reducir la ingesta de alimento del ganado, disminuir la producción de leche y afectar la salud general de los animales.
-
-## 3. Hipótesis de Investigación
-
-Para abordar este problema, el análisis se guiará por las siguientes hipótesis testables:
-
-* **H1 (Viticultura):** El aumento de temperaturas y días de calor extremo en Marlborough y Hawke's Bay se correlacionará positivamente con la compresión de la cosecha y una mayor variabilidad en la producción de uva.
-* **H2 (Lechería):** El aumento de "días de estrés por calor" en Waikato y Canterbury se correlacionará negativamente con la producción de leche por vaca.
-* **H3 (Kiwis):** La disminución de "unidades de frío invernal" en Bay of Plenty se correlacionará negativamente con el rendimiento de las variedades de kiwi verde (Hayward).
+*A GIF of the final, interactive dashboard will be embedded here for immediate visual demonstration.*
 
 ---
 
-## 4. Stack Tecnológico
+## 1. Project Vision & Value Proposition
 
-* **Lenguaje:** Python
-* **Análisis y Manipulación:** Pandas, NumPy, GeoPandas
-* **Base de Datos:** SQLite (vía SQLAlchemy)
-* **Visualización:** Plotly, Matplotlib, Seaborn
-* **Dashboard Interactivo:** Streamlit
-* **Control de Versiones:** Git y GitHub
-* **Entorno Virtual:** venv / conda
+This project simulates a high-level strategic consulting engagement, designed to go beyond conventional data analysis. The objective is to build a prototype **Climate Risk Assessment Tool**. The value proposition is to demonstrate the ability to transform disparate, complex data into an interactive tool that facilitates long-term strategic decision-making. The final output not only presents findings but also offers a solution that a stakeholder, such as a viticulturist or a government planner, can use to explore scenarios and plan for adaptation.
+
+## 2. The Business Problem
+
+New Zealand's primary industries are the backbone of its export economy and a core part of its national identity. However, they face a tangible and growing threat from climate change. This project addresses the following specific and measurable risks:
+
+* **Viticulture:** Global warming is causing "harvest compression," accelerating grape ripening, which impacts quality and creates logistical bottlenecks during the harvest season.
+* **Kiwifruit:** Rising winter temperatures threaten "loss of winter chill." Kiwifruit varieties like Hayward require a minimum number of hours at low temperatures to ensure uniform bud break and an abundant harvest. This puts the viability of the crop at risk in key regions like the Bay of Plenty.
+* **Dairy:** The increase in "heat stress days" (temperatures > 25°C) can reduce cattle feed intake, decrease milk production, and affect the overall health of the animals.
+
+## 3. Research Hypotheses
+
+To address this problem, the analysis will be guided by the following testable hypotheses:
+
+* **H1 (Viticulture):** An increase in average temperatures and extreme heat days in key regions like Marlborough and Hawke's Bay will positively correlate with harvest compression and greater year-over-year variability in grape production.
+* **H2 (Dairy):** The projected increase in "heat stress days" in primary dairy regions like Waikato and Canterbury will negatively correlate with milk production per cow.
+* **H3 (Kiwifruit):** The projected decrease in "winter chill units" in the Bay of Plenty will negatively correlate with the yield of green kiwifruit (Hayward) varieties.
 
 ---
 
-## 5. Estructura del Repositorio
+## 4. Tech Stack
 
-El proyecto está organizado de manera lógica para facilitar la navegación, el mantenimiento y la reproducibilidad.
+* **Language:** Python
+* **Analysis & Manipulation:** Pandas, NumPy, GeoPandas
+* **Database:** SQLite (via SQLAlchemy)
+* **Visualization:** Plotly, Matplotlib, Seaborn
+* **Interactive Dashboard:** Streamlit
+* **Version Control:** Git & GitHub
+* **Virtual Environment:** venv / conda
+
+---
+
+## 5. Repository Structure
+
+The project is logically organized to facilitate navigation, maintenance, and reproducibility.
 
 ```
 /
 ├── data/
-│   ├── raw/          # Archivos de datos originales sin procesar
-│   └── processed/    # Base de datos limpia y archivos intermedios
-├── notebooks/        # Cuadernos de Jupyter para exploración y análisis
-├── src/              # Scripts de Python con funciones reutilizables
-├── app/              # Código de la aplicación Streamlit
+│   ├── raw/          # Original, unprocessed data files
+│   └── processed/    # Cleaned database and intermediate files
+├── notebooks/        # Jupyter Notebooks for exploration and analysis
+├── src/              # Python scripts with reusable functions
+├── app/              # Code for the Streamlit application
 ├── .gitignore
-├── requirements.txt  # Lista de dependencias para la reproducibilidad
-└── README.md         # Este mismo archivo, el documento central del proyecto
+├── requirements.txt  # List of dependencies for reproducibility
+└── README.md         # This file, the project's central document
 ```
 ---
 
-## 6. Fuentes de Datos
+## 6. Data Sources
 
-La adquisición de datos se planificó proactivamente para integrar información de múltiples agencias gubernamentales, un desafío clave del proyecto.
+Data acquisition was proactively planned to integrate information from multiple government agencies, a key challenge of the project.
 
-| Dataset | Fuente | Variables Clave | Formato/Acceso | Relevancia para la Hipótesis |
-| :--- | :--- | :--- | :--- | :--- |
-| **Clima Histórico** | NIWA DataHub | Temp. Max/Min Diaria, Precipitación | CSV (requiere registro) | Base para calcular métricas históricas como `heat_stress_days` y `winter_chill_units`. |
-| **Proyecciones Climáticas**| NIWA / MfE Portal | Temp., Lluvia, Días de Calor >25°C bajo escenarios SSP | NetCDF o CSV | Núcleo del análisis de riesgo futuro. |
-| **Producción Agrícola** | Stats NZ (Aotearoa Data Explorer) | Hectáreas de cultivo, producción total por región | CSV (vía ADE) o Excel | Variable dependiente para los modelos de correlación. |
-| **Límites Regionales** | Stats NZ / LINZ | Geometrías poligonales de las regiones | Shapefile o GeoJSON | Esencial para la visualización geoespacial. |
-
----
-
-## 7. Metodología y Fases del Proyecto
-
-*Esta sección se rellenará a medida que avances. Será un resumen de los pasos clave en cada fase.*
-* **Fase 1: Planificación y Diseño:** Definición de objetivos, hipótesis y plan de adquisición de datos.
-* **Fase 2: Adquisición e Ingeniería de Datos:** Proceso de ETL (Extracción, Transformación, Carga), limpieza, unión y creación de características.
-* **Fase 3: Modelado y Análisis Exploratorio:** Visualización, análisis de correlación y modelado de escenarios.
-* **Fase 4: Comunicación y Despliegue:** Construcción y despliegue del dashboard interactivo con Streamlit.
+| Dataset                  | Source                            | Key Variables                                  | Format/Access                   | Relevance to Hypothesis                                                  |
+| :----------------------- | :-------------------------------- | :----------------------------------------------- | :------------------------------ | :----------------------------------------------------------------------- |
+| **Historical Climate** | NIWA DataHub                      | Daily Max/Min Temp, Precipitation              | CSV (requires registration)     | Baseline for calculating historical metrics like `heat_stress_days` and `winter_chill_units`. |
+| **Climate Projections** | NIWA / MfE Portal                 | Temp, Rainfall, Heat Days >25°C under SSP scenarios | NetCDF or CSV                   | Core of the future risk analysis.                                        |
+| **Agricultural Production**| Stats NZ (Aotearoa Data Explorer) | Hectares planted, total production by region | CSV (via ADE) or Excel          | Key dependent variable for correlation and regression models.            |
+| **Regional Boundaries** | Stats NZ / LINZ                   | Polygon geometries of regional councils        | Shapefile or GeoJSON            | Essential for geospatial visualization and data aggregation.             |
 
 ---
 
-## 8. Hallazgos Clave y Conclusiones
+## 7. Methodology & Project Phases
 
-*Esta sección la rellenarás al final del proyecto. Será un resumen de tus descubrimientos más importantes y las respuestas a tus hipótesis.*
-
----
-
-## 9. Instalación y Uso
-
-*Aquí explicarás cómo otra persona puede clonar tu repositorio, instalar las dependencias con `pip install -r requirements.txt` y ejecutar tu análisis y aplicación.*
+*This section will be filled out as the project progresses, summarizing the key steps in each phase.*
+* **Phase 1: Planning & Design:** Definition of objectives, hypotheses, and the data acquisition plan.
+* **Phase 2: Data Acquisition & Engineering:** ETL process (Extract, Transform, Load), cleaning, joining, and feature engineering.
+* **Phase 3: Exploratory Analysis & Modeling:** Visualization, correlation analysis, and scenario modeling.
+* **Phase 4: Communication & Deployment:** Building and deploying the interactive dashboard with Streamlit.
 
 ---
 
-## 10. Licencia
+## 8. Key Findings & Conclusions
 
-Este proyecto está bajo la Licencia MIT.
+*This section will be filled out at the end of the project with the most important discoveries and the answers to the research hypotheses.*
+
+---
+
+## 9. Installation & Usage
+
+*This section will explain how someone else can clone the repository, install the dependencies with `pip install -r requirements.txt`, and run the analysis and application.*
+
+---
+
+## 10. License
+
+This project is licensed under the MIT License.
