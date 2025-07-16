@@ -51,7 +51,6 @@ To address this problem, the analysis will be guided by the following testable h
 The project is logically organized to facilitate navigation, maintenance, and reproducibility.
 
 ```
-/
 ├── data/
 │   ├── raw/          # Original, unprocessed data files
 │   └── processed/    # Cleaned database and intermediate files
