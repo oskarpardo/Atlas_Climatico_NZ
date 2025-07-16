@@ -49,6 +49,7 @@ Para abordar este problema, el análisis se guiará por las siguientes hipótesi
 ## 5. Estructura del Repositorio
 
 El proyecto está organizado de manera lógica para facilitar la navegación, el mantenimiento y la reproducibilidad.
+
 ```
 /
 ├── data/
@@ -59,9 +60,8 @@ El proyecto está organizado de manera lógica para facilitar la navegación, el
 ├── app/              # Código de la aplicación Streamlit
 ├── .gitignore
 ├── requirements.txt  # Lista de dependencias para la reproducibilidad
-└── README.md         # Este mismo archivo, el documento central del proyecto```
-
-
+└── README.md         # Este mismo archivo, el documento central del proyecto
+```
 ---
 
 ## 6. Fuentes de Datos
@@ -74,3 +74,31 @@ La adquisición de datos se planificó proactivamente para integrar información
 | **Proyecciones Climáticas**| NIWA / MfE Portal | Temp., Lluvia, Días de Calor >25°C bajo escenarios SSP | NetCDF o CSV | Núcleo del análisis de riesgo futuro. |
 | **Producción Agrícola** | Stats NZ (Aotearoa Data Explorer) | Hectáreas de cultivo, producción total por región | CSV (vía ADE) o Excel | Variable dependiente para los modelos de correlación. |
 | **Límites Regionales** | Stats NZ / LINZ | Geometrías poligonales de las regiones | Shapefile o GeoJSON | Esencial para la visualización geoespacial. |
+
+---
+
+## 7. Metodología y Fases del Proyecto
+
+*Esta sección se rellenará a medida que avances. Será un resumen de los pasos clave en cada fase.*
+* **Fase 1: Planificación y Diseño:** Definición de objetivos, hipótesis y plan de adquisición de datos.
+* **Fase 2: Adquisición e Ingeniería de Datos:** Proceso de ETL (Extracción, Transformación, Carga), limpieza, unión y creación de características.
+* **Fase 3: Modelado y Análisis Exploratorio:** Visualización, análisis de correlación y modelado de escenarios.
+* **Fase 4: Comunicación y Despliegue:** Construcción y despliegue del dashboard interactivo con Streamlit.
+
+---
+
+## 8. Hallazgos Clave y Conclusiones
+
+*Esta sección la rellenarás al final del proyecto. Será un resumen de tus descubrimientos más importantes y las respuestas a tus hipótesis.*
+
+---
+
+## 9. Instalación y Uso
+
+*Aquí explicarás cómo otra persona puede clonar tu repositorio, instalar las dependencias con `pip install -r requirements.txt` y ejecutar tu análisis y aplicación.*
+
+---
+
+## 10. Licencia
+
+Este proyecto está bajo la Licencia MIT.
