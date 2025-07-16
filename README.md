@@ -8,7 +8,7 @@
 
 ### ➡️ [Ver Dashboard Interactivo en Vivo](link vacio por ahora)
 
-*Aquí se insertará una GIF animada del dashboard final en acción para una demostración visual inmediata.*
+*Gift cuando esté listo*
 
 ---
 
@@ -31,7 +31,10 @@ Para abordar este problema, el análisis se guiará por las siguientes hipótesi
 * **H1 (Viticultura):** El aumento de temperaturas y días de calor extremo en Marlborough y Hawke's Bay se correlacionará positivamente con la compresión de la cosecha y una mayor variabilidad en la producción de uva.
 * **H2 (Lechería):** El aumento de "días de estrés por calor" en Waikato y Canterbury se correlacionará negativamente con la producción de leche por vaca.
 * **H3 (Kiwis):** La disminución de "unidades de frío invernal" en Bay of Plenty se correlacionará negativamente con el rendimiento de las variedades de kiwi verde (Hayward).
-* ## 4. Stack Tecnológico
+
+---
+
+## 4. Stack Tecnológico
 
 * **Lenguaje:** Python
 * **Análisis y Manipulación:** Pandas, NumPy, GeoPandas
@@ -41,9 +44,12 @@ Para abordar este problema, el análisis se guiará por las siguientes hipótesi
 * **Control de Versiones:** Git y GitHub
 * **Entorno Virtual:** venv / conda
 
+---
+
 ## 5. Estructura del Repositorio
 
 El proyecto está organizado de manera lógica para facilitar la navegación, el mantenimiento y la reproducibilidad.
+
 /
 ├── data/
 │   ├── raw/          # Archivos de datos originales sin procesar
@@ -55,6 +61,9 @@ El proyecto está organizado de manera lógica para facilitar la navegación, el
 ├── requirements.txt  # Lista de dependencias para la reproducibilidad
 └── README.md         # Este mismo archivo, el documento central del proyecto
 
+
+---
+
 ## 6. Fuentes de Datos
 
 La adquisición de datos se planificó proactivamente para integrar información de múltiples agencias gubernamentales, un desafío clave del proyecto.
@@ -65,14 +74,3 @@ La adquisición de datos se planificó proactivamente para integrar información
 | **Proyecciones Climáticas**| NIWA / MfE Portal | Temp., Lluvia, Días de Calor >25°C bajo escenarios SSP | NetCDF o CSV | Núcleo del análisis de riesgo futuro. |
 | **Producción Agrícola** | Stats NZ (Aotearoa Data Explorer) | Hectáreas de cultivo, producción total por región | CSV (vía ADE) o Excel | Variable dependiente para los modelos de correlación. |
 | **Límites Regionales** | Stats NZ / LINZ | Geometrías poligonales de las regiones | Shapefile o GeoJSON | Esencial para la visualización geoespacial. |
-## 6. Fuentes de Datos
-
-La adquisición de datos se planificó proactivamente para integrar información de múltiples agencias gubernamentales, un desafío clave del proyecto.
-
-| Dataset | Fuente | Variables Clave | Formato/Acceso | Relevancia para la Hipótesis |
-| :--- | :--- | :--- | :--- | :--- |
-| **Clima Histórico** | NIWA DataHub | Temp. Max/Min Diaria, Precipitación | CSV (requiere registro) | Base para calcular métricas históricas como `heat_stress_days` y `winter_chill_units`. |
-| **Proyecciones Climáticas**| NIWA / MfE Portal | Temp., Lluvia, Días de Calor >25°C bajo escenarios SSP | NetCDF o CSV | Núcleo del análisis de riesgo futuro. |
-| **Producción Agrícola** | Stats NZ (Aotearoa Data Explorer) | Hectáreas de cultivo, producción total por región | CSV (vía ADE) o Excel | Variable dependiente para los modelos de correlación. |
-| **Límites Regionales** | Stats NZ / LINZ | Geometrías poligonales de las regiones | Shapefile o GeoJSON | Esencial para la visualización geoespacial. |
-
